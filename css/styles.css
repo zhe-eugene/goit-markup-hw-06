@@ -45,14 +45,12 @@ img {
 }
 
 .section-subtitle {
-
     font-weight: 700;
     font-size: 36px;
     line-height: 1.11;
     letter-spacing: 0.02em;
     text-align: center;
     color: #2e2f42;
-
 }
 
 .section-text {
@@ -190,8 +188,6 @@ img {
 
 
 .section {
-    /* padding-top: 120px;
-    padding-bottom: 120px; */
     padding-top: 96px;
     padding-bottom: 96px;
 }
@@ -204,11 +200,18 @@ img {
     padding-top: 72px;
     padding-bottom: 72px;
     background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
-        url(../images/people-office.jpg);
+        url(../images/people-office-mob.jpg);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
     margin: 0 auto;
+}
+
+@media screen and (min-resolution: 2dppx) {
+    .section-main {
+        background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
+            url(../images/people-office-mob-2x.jpg);
+    }
 }
 
 
@@ -271,7 +274,6 @@ img {
 
 .advantages-icon-container {
     display: none;
-
 }
 
 .advantages-icon {}
@@ -289,7 +291,10 @@ img {
 
 .section-ourteam {
     background-color: #F4F4FD;
+}
 
+.section-ourteam img {
+    flex-shrink: 0;
 }
 
 .section-ourteam>.container {
@@ -307,7 +312,6 @@ img {
     margin-bottom: 72px;
 
 }
-
 
 
 .ourteam-list {
@@ -389,6 +393,10 @@ img {
     background: #fff;
 }
 
+.section-ourportfolio picture {
+    flex-shrink: 0;
+}
+
 .ourportfolio-title {
     font-weight: 700;
     font-size: 36px;
@@ -403,8 +411,7 @@ img {
 .ourportfolio-list {
     display: flex;
     flex-wrap: wrap;
-    column-gap: 24px;
-    row-gap: 48px;
+    gap: 72px;
 }
 
 
@@ -448,11 +455,16 @@ img {
     border-left: 1px solid #e7e9fc;
     border-right: 1px solid #e7e9fc;
     padding: 32px 16px;
-    width: 360px;
+    width: 288px;
     height: 120px;
 }
 
 .ourportfolio-subtitle {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 1.2;
+    letter-spacing: 0.02em;
+    color: #2e2f42;
     margin-bottom: 8px;
 }
 
@@ -466,24 +478,28 @@ img {
 
 .footer {
     background: #2e2f42;
-    padding-top: 100px;
-    padding-bottom: 100px;
-
+    padding-top: 92px;
+    padding-bottom: 92px;
+    text-align: center;
 
 }
 
 .footer-wrapper {
     display: flex;
-    align-items: baseline;
+    flex-direction: column;
+    align-items: center;
+    gap: 72px;
+
 }
 
-.footer-logo-wrapper {
-    margin-right: 120px;
-}
+.footer-logo-wrapper {}
 
 .footer-logo {
-    display: inline-block;
+    display: flex;
     margin-bottom: 16px;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
 }
 
 
@@ -498,6 +514,7 @@ img {
     letter-spacing: 0.02em;
     color: #f4f4fd;
     width: 264px;
+    text-align: left;
 }
 
 .footer-soc-wrapper {}
@@ -545,14 +562,14 @@ img {
 
 
 .footer-subscribe-wrapper {
-    margin-left: 80px;
-
+    /* margin-left: 80px; */
 }
 
 .footer-subscribe-text {
     font-weight: 500;
     font-size: 16px;
     line-height: 1.5;
+    text-align: center;
     letter-spacing: 0.02em;
     color: #fff;
     margin-bottom: 16px;
@@ -560,8 +577,10 @@ img {
 
 
 .footer-form {
+    align-items: baseline;
     display: flex;
-    gap: 24px;
+    flex-wrap: wrap;
+    gap: 16px;
     align-items: center;
     justify-content: center;
 }
@@ -569,7 +588,8 @@ img {
 .footer-subscribe-input {
     border: 1px solid #fff;
     border-radius: 4px;
-    width: 264px;
+
+    width: 288px;
     height: 40px;
     box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
     background-color: transparent;
@@ -867,11 +887,24 @@ img {
 
 
 @media screen and (min-width: 768px) {
+
     .container {
         max-width: 768px;
     }
 
+    .section-main {
+        padding-top: 112px;
+        padding-bottom: 112px;
+        background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
+            url(../images/people-office-tab.jpg);
+    }
 
+    @media screen and (min-resolution: 2dppx) {
+        .section-main {
+            background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
+                url(../images/people-office-tab-2x.jpg);
+        }
+    }
 
     .main-title {
         font-weight: 700;
@@ -883,11 +916,10 @@ img {
         margin-bottom: 36px;
     }
 
+
     .advantages-list {
         gap: 72px 24px;
     }
-
-
 
     .advantages-item {
         width: calc((100% - 24px) / 2);
@@ -907,12 +939,56 @@ img {
         gap: 64px 24px;
     }
 
-    .ourteam-title {
-        text-align: center;
+
+    .ourportfolio-list {
+        gap: 72px 24px;
     }
 
+    .container-ourportfolio {
+        width: 356px;
+    }
+
+    .ourportfolio-image {
+        max-width: 356px;
+
+    }
+
+    .footer {
+        text-align: left;
+    }
+
+    .footer-wrapper {
+        align-items: baseline;
+        flex-wrap: wrap;
+        flex-direction: row;
+        gap: 72px 24px;
+    }
+
+    .footer-logo {
+        justify-content: left;
+        align-items: left;
+    }
+
+    .footer>.container {
+        padding-left: 108px;
+        padding-right: 108px;
+        ;
+    }
+
+    .footer-subscribe-text {
+        text-align: left;
+    }
+
+    .footer-form {
+        gap: 24px;
+    }
 
 }
+
+
+
+
+
 
 @media screen and (min-width: 1158px) {
     .container {
@@ -920,6 +996,7 @@ img {
         padding-left: 15px;
         padding-right: 15px;
     }
+
 
     .section-subtitle {
         font-weight: 500;
@@ -933,7 +1010,15 @@ img {
         max-width: 1440px;
         padding-top: 188px;
         padding-bottom: 188px;
-        margin: 0 auto;
+        background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
+            url(../images/people-office.jpg);
+    }
+
+    @media screen and (min-resolution: 2dppx) {
+        .section-main {
+            background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
+                url(../images/people-office-2x.jpg);
+        }
     }
 
     .main-title {
@@ -948,7 +1033,6 @@ img {
     }
 
     .advantages-list {
-        display: flex;
         gap: 24px;
 
     }
@@ -957,6 +1041,10 @@ img {
         width: calc((100% - 3 * 24px) / 4);
     }
 
+    .ourportfolio-list {
+        flex-wrap: wrap;
+        gap: 72px 24px;
+    }
 
     .advantages-icon-container {
         background-color: #f4f4fd;
@@ -977,9 +1065,64 @@ img {
     }
 
     .ourteam-list {
-        display: flex;
         gap: 24px;
     }
 
+    .ourportfolio-list {
+        gap: 48px 24px;
+    }
+
+    .container-ourportfolio {
+        width: 360px;
+    }
+
+    .ourportfolio-image {
+        max-width: 360px;
+    }
+
+    .footer {
+        max-width: 1440px;
+        padding-top: 100px;
+        padding-bottom: 100px;
+
+    }
+
+    .footer>.container {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+
+
+    .footer-wrapper {
+        flex-wrap: nowrap;
+        gap: 0;
+    }
+
+    .footer-logo-wrapper {
+        margin-right: 120px;
+    }
+
+
+    .footer-logo {
+        display: inline-block;
+        margin-bottom: 16px;
+    }
+
+    .footer-subscribe-wrapper {
+        margin-left: 80px;
+    }
+
+    .footer-form {
+        flex-wrap: nowrap;
+        gap: 24px;
+    }
+
+    .footer-subscribe-input {
+        width: 264px;
+    }
+
+    .footer-text {
+        text-align: left;
+    }
 
 }

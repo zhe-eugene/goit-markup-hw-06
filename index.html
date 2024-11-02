@@ -17,6 +17,7 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
+
     <link rel="stylesheet" href="./css/styles.css" />
   </head>
   <body>
@@ -133,6 +134,10 @@
           <ul class="ourteam-list">
             <li class="ourteam-item">
               <img
+                srcset="
+                  ./images/mark-guerrero.jpg    1x,
+                  ./images/mark-guerrero-2x.jpg 2x
+                "
                 src="./images/mark-guerrero.jpg"
                 alt=" Photo Mark Guerrero"
                 width="264"
@@ -176,6 +181,7 @@
 
             <li class="ourteam-item">
               <img
+                srcset="./images/tom-ford.jpg 1x, ./images/tom-ford-2x.jpg 2x"
                 class="ourteam-image"
                 src="./images/tom-ford.jpg"
                 alt="Photo Tom Ford"
@@ -219,6 +225,10 @@
 
             <li class="ourteam-item">
               <img
+                srcset="
+                  ./images/camila-garcia.jpg    1x,
+                  ./images/camila-garcia-2x.jpg 2x
+                "
                 class="ourteam-image"
                 src="./images/camila-garcia.jpg"
                 alt="Photo Camila Garcia"
@@ -262,6 +272,10 @@
 
             <li class="ourteam-item">
               <img
+                srcset="
+                  ./images/daniel-wilson.jpg    1x,
+                  ./images/daniel-wilson-2x.jpg 2x
+                "
                 class="ourteam-image"
                 src="./images/daniel-wilson.jpg"
                 alt="Photo Daniel Wilson"
@@ -306,19 +320,44 @@
         </div>
       </section>
 
-      <!-- <section class="section-ourportfolio section">
+      <section class="section-ourportfolio section">
         <div class="container">
           <h2 class="ourportfolio-title section-title">Our Portfolio</h2>
           <ul class="ourportfolio-list">
             <li class="ourportfolio-item">
               <div class="ourteam-cover-wrapper">
-                <img
-                  class="ourportfolio-image"
-                  src="./images/banking-app.jpg"
-                  alt="Banking App"
-                  width="360"
-                  height="300"
-                />
+                <picture>
+                  <source
+                    srcset="
+                      ./images/banking-app.jpg    1x,
+                      ./images/banking-app-2x.jpg 2x
+                    "
+                    media="(min-width: 1158px)"
+                  />
+
+                  <source
+                    srcset="
+                      ./images/banking-app-tab.jpg    1x,
+                      ./images/banking-app-tab-2x.jpg 2x
+                    "
+                    media="(min-width: 768px)"
+                  />
+                  <source
+                    srcset="
+                      ./images/banking-app-mob.jpg    1x,
+                      ./images/banking-app-mob-2x.jpg 2x
+                    "
+                    media="(max-width: 767px)"
+                  />
+
+                  <img
+                    class="ourportfolio-image"
+                    src="./images/banking-app.jpg"
+                    alt="Banking App"
+                    width="360"
+                  />
+                </picture>
+
                 <p class="ourportfolio-cover-text section-text">
                   14 Stylish and User-Friendly App Design Concepts · Task
                   Manager App · Calorie Tracker App · Exotic Fruit Ecommerce App
@@ -326,21 +365,44 @@
                 </p>
               </div>
               <div class="container-ourportfolio">
-                <h3 class="ourportfolio-subtitle section-subtitle">
-                  Banking App
-                </h3>
+                <h3 class="ourportfolio-subtitle">Banking App</h3>
                 <p class="ourportfolio-text section-text">App</p>
               </div>
             </li>
             <li class="ourportfolio-item">
               <div class="ourteam-cover-wrapper">
-                <img
-                  class="ourportfolio-image"
-                  src="./images/cashless-payment.jpg"
-                  alt="Cashless Payment"
-                  width="360"
-                  height="300"
-                />
+                <picture>
+                  <source
+                    srcset="
+                      ./images/cashless-payment.jpg    1x,
+                      ./images/cashless-payment-2x.jpg 2x
+                    "
+                    media="(min-width: 1158px)"
+                  />
+
+                  <source
+                    srcset="
+                      ./images/cashless-payment-tab.jpg    1x,
+                      ./images/cashless-payment-tab-2x.jpg 2x
+                    "
+                    media="(min-width: 768px)"
+                  />
+                  <source
+                    srcset="
+                      ./images/cashless-payment-mob.jpg    1x,
+                      ./images/cashless-payment-mob-2x.jpg 2x
+                    "
+                    media="(max-width: 767px)"
+                  />
+
+                  <img
+                    class="ourportfolio-image"
+                    src="./images/cashless-payment.jpg"
+                    alt="Cashless Payment"
+                    width="360"
+                  />
+                </picture>
+
                 <p class="ourportfolio-cover-text section-text">
                   14 Stylish and User-Friendly App Design Concepts · Task
                   Manager App · Calorie Tracker App · Exotic Fruit Ecommerce App
@@ -348,21 +410,42 @@
                 </p>
               </div>
               <div class="container-ourportfolio">
-                <h3 class="ourportfolio-subtitle section-subtitle">
-                  Cashless Payment
-                </h3>
+                <h3 class="ourportfolio-subtitle">Cashless Payment</h3>
                 <p class="ourportfolio-text section-text">Marketing</p>
               </div>
             </li>
             <li class="ourportfolio-item">
               <div class="ourteam-cover-wrapper">
-                <img
-                  class="ourportfolio-image"
-                  src="./images/meditation-app.jpg"
-                  alt="Meditation App"
-                  width="360"
-                  height="300"
-                />
+                <picture>
+                  <source
+                    srcset="
+                      ./images/meditation-app.jpg    1x,
+                      ./images/meditation-app-x2.jpg 2x
+                    "
+                    media="(min-width: 1158px)"
+                  />
+
+                  <source
+                    srcset="
+                      ./images/meditation-app-tab.jpg    1x,
+                      ./images/meditation-app-tab-2x.jpg 2x
+                    "
+                    media="(min-width: 768px)"
+                  />
+                  <source
+                    srcset="
+                      ./images/meditation-app-mob.jpg    1x,
+                      ./images/meditation-app-mob-x2.jpg 2x
+                    "
+                    media="(max-width: 767px)"
+                  />
+                  <img
+                    class="ourportfolio-image"
+                    src="./images/meditation-app.jpg"
+                    alt="Cashless Payment"
+                    width="360"
+                  />
+                </picture>
                 <p class="ourportfolio-cover-text section-text">
                   14 Stylish and User-Friendly App Design Concepts · Task
                   Manager App · Calorie Tracker App · Exotic Fruit Ecommerce App
@@ -370,21 +453,41 @@
                 </p>
               </div>
               <div class="container-ourportfolio">
-                <h3 class="ourportfolio-subtitle section-subtitle">
-                  Meditation App
-                </h3>
+                <h3 class="ourportfolio-subtitle">Meditation App</h3>
                 <p class="ourportfolio-text section-text">App</p>
               </div>
             </li>
             <li class="ourportfolio-item">
               <div class="ourteam-cover-wrapper">
-                <img
-                  class="ourportfolio-image"
-                  src="./images/taxi-service.jpg"
-                  alt="Taxi Service"
-                  width="360"
-                  height="300"
-                />
+                <picture>
+                  <source
+                    srcset="
+                      ./images/taxi-service.jpg    1x,
+                      ./images/taxi-service-2x.jpg 2x
+                    "
+                    media="(min-width: 1158px)"
+                  />
+                  <source
+                    srcset="
+                      ./images/taxi-service-tab.jpg    1x,
+                      ./images/taxi-service-tab-2x.jpg 2x
+                    "
+                    media="(min-width: 768px)"
+                  />
+                  <source
+                    srcset="
+                      ./images/taxi-service-mob.jpg    1x,
+                      ./images/taxi-service-mob-2x.jpg 2x
+                    "
+                    media="(max-width: 767px)"
+                  />
+                  <img
+                    class="ourportfolio-image"
+                    src="./images/taxi-service.jpg"
+                    alt="Cashless Payment"
+                    width="360"
+                  />
+                </picture>
                 <p class="ourportfolio-cover-text section-text">
                   14 Stylish and User-Friendly App Design Concepts · Task
                   Manager App · Calorie Tracker App · Exotic Fruit Ecommerce App
@@ -392,21 +495,42 @@
                 </p>
               </div>
               <div class="container-ourportfolio">
-                <h3 class="ourportfolio-subtitle section-subtitle">
-                  Taxi Service
-                </h3>
+                <h3 class="ourportfolio-subtitle">Taxi Service</h3>
                 <p class="ourportfolio-text section-text">Marketing</p>
               </div>
             </li>
             <li class="ourportfolio-item">
               <div class="ourteam-cover-wrapper">
-                <img
-                  class="ourportfolio-image"
-                  src="./images/screen-illustartion.jpg"
-                  alt="Screen Illustrations"
-                  width="360"
-                  height="300"
-                />
+                <picture>
+                  <source
+                    srcset="
+                      ./images/screen-illustartion.jpg    1x,
+                      ./images/screen-illustartion-2x.jpg 2x
+                    "
+                    media="(min-width: 1158px)"
+                  />
+
+                  <source
+                    srcset="
+                      ./images/screen-illustartion-tab.jpg    1x,
+                      ./images/screen-illustartion-tab-2x.jpg 2x
+                    "
+                    media="(min-width: 768px)"
+                  />
+                  <source
+                    srcset="
+                      ./images/screen-illustartion-mob.jpg    1x,
+                      ./images/screen-illustartion-mob-2x.jpg 2x
+                    "
+                    media="(max-width: 767px)"
+                  />
+                  <img
+                    class="ourportfolio-image"
+                    src="./images/screen-illustartion.jpg"
+                    alt="Cashless Payment"
+                    width="360"
+                  />
+                </picture>
                 <p class="ourportfolio-cover-text section-text">
                   14 Stylish and User-Friendly App Design Concepts · Task
                   Manager App · Calorie Tracker App · Exotic Fruit Ecommerce App
@@ -414,21 +538,42 @@
                 </p>
               </div>
               <div class="container-ourportfolio">
-                <h3 class="ourportfolio-subtitle section-subtitle">
-                  Screen Illustrations
-                </h3>
+                <h3 class="ourportfolio-subtitle">Screen Illustrations</h3>
                 <p class="ourportfolio-text section-text">Design</p>
               </div>
             </li>
             <li class="ourportfolio-item">
               <div class="ourteam-cover-wrapper">
-                <img
-                  class="ourportfolio-image"
-                  src="./images/online-courses.jpg"
-                  alt="Online Courses"
-                  width="360"
-                  height="300"
-                />
+                <picture>
+                  <source
+                    srcset="
+                      ./images/online-courses.jpg    1x,
+                      ./images/online-courses-x2.jpg 2x
+                    "
+                    media="(min-width: 1158px)"
+                  />
+
+                  <source
+                    srcset="
+                      ./images/online-courses-tab.jpg    1x,
+                      ./images/online-courses-tab-2x.jpg 2x
+                    "
+                    media="(min-width: 768px)"
+                  />
+                  <source
+                    srcset="
+                      ./images/online-courses-tab.jpg    1x,
+                      ./images/online-courses-tab-2x.jpg 2x
+                    "
+                    media="(max-width: 767px)"
+                  />
+                  <img
+                    class="ourportfolio-image"
+                    src="./images/online-courses.jpg"
+                    alt="Cashless Payment"
+                    width="360"
+                  />
+                </picture>
                 <p class="ourportfolio-cover-text section-text">
                   14 Stylish and User-Friendly App Design Concepts · Task
                   Manager App · Calorie Tracker App · Exotic Fruit Ecommerce App
@@ -436,18 +581,16 @@
                 </p>
               </div>
               <div class="container-ourportfolio">
-                <h3 class="ourportfolio-subtitle section-subtitle">
-                  Online Courses
-                </h3>
+                <h3 class="ourportfolio-subtitle">Online Courses</h3>
                 <p class="ourportfolio-text section-text">Marketing</p>
               </div>
             </li>
           </ul>
         </div>
-      </section> -->
+      </section>
     </main>
 
-    <!-- <footer class="footer">
+    <footer class="footer container">
       <div class="container footer-wrapper">
         <div class="footer-logo-wrapper">
           <a href="./index.html" class="footer-logo general-logo"
@@ -518,7 +661,7 @@
           </form>
         </div>
       </div>
-    </footer> -->
+    </footer>
 
     <!-- <div class="backdrop">
       <div class="modal">
